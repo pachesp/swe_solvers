@@ -51,7 +51,7 @@
  * @param o_waveSpeeds will be set to: (linearized) wave speeds -> Should be used in the CFL-condition.
  */
 extern "C" void c_bind_geoclaw_riemann_aug_JCP( const int &i_maxNumberOfRiemannIterations,
-                                                const double i_variablesLeft[3], const double i_variablesRight[3],
+                                                const double i_variablesLeft[4], const double i_variablesRight[4],
                                                 const double &i_dryTol, const double &i_g,
                                                 double o_netUpdatesLeft[3], double o_netUpdatesRight[3],
                                                 double o_waveSpeeds[NUMBER_OF_FWAVES]
